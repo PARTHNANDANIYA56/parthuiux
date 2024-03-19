@@ -3,7 +3,7 @@ import '../App.css';
 
 function Testimonial() {
     return (
-        <div className='mt-4 text-center'>
+        <div className=' text-center project_test'>
             <h1>Project</h1>
 
             <div className="container mt-4">
