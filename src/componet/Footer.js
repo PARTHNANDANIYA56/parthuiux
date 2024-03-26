@@ -16,7 +16,7 @@ function Footer() {
                     <div class="d-flex gap-5 justify-content-center">
                         <div class=" text-center w-25">
                             <label htmlFor="Name">Name</label>
-                            <input type="text" class="form-control mt-3" placeholder="Enter Your Name" />
+                            <input type="text" class="form-control mt-3" placeholder="Enter Your Name" required />
                         </div>
                         <div class="text-center w-25">
                             <label htmlFor="email">Email</label>
