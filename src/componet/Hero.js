@@ -19,8 +19,7 @@ function Hero() {
                         </p>
                         <div className="d-flex mt-4 gap-3">
                             <a
-                                href="https://www.linkedin.com/in/parth-nandaniya-73b684224/"
-                                target="_blank"
+                                href="https://www.linkedin.com/in/parth-nandaniya-73b684224/"                                target="_blank"
                                 className="btn btn-warning mr-2"
                                 role="button"
                             >

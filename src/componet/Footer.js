@@ -19,10 +19,12 @@ function Footer() {
                             <input type="text" class="form-control mt-3" placeholder="Enter Your Name" />
                         </div>
                         <div class="text-center w-25">
-                            <label htmlFor="Email">Email</label>
-                            <input type="email" class="form-control mt-3" placeholder="Enter Your Email" />
+                            <label htmlFor="email">Email</label>
+                            <input type="email" class="form-control mt-3" placeholder="Enter Your Email" required />
                         </div>
-                    </div>
+                    </div>.
+
+
                     <div class="container text-center">
                         <div class="row justify-content-center">
                             <div class="col-6">
