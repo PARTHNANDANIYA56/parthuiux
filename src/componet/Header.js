@@ -6,7 +6,7 @@ function Header() {
     return (
         <>
             <header className='container'>
-                <div className='text-light'>
+                <div className='p-3'>
                     {/* <h1>ℙ𝔸ℝ𝕋ℍ</h1> */}
                     <img src="logo.png" alt="" />
                 </div>
