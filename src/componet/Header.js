@@ -7,7 +7,8 @@ function Header() {
         <>
             <header className='container'>
                 <div className='text-light'>
-                    <h1>ℙ𝔸ℝ𝕋ℍ</h1>
+                    {/* <h1>ℙ𝔸ℝ𝕋ℍ</h1> */}
+                    <img src="logo.png" alt="" />
                 </div>
             </header>
         </>

@@ -57,6 +57,9 @@ function Footer() {
             <div className='text-center mt-3 mb-3 '>
                 <a href="#" className='text-warning'>parthnandaniya62@gmail.com</a>
             </div>
+            <div className="text-center bg-dark p-3">
+                © 2024 Parth All Rights Reserved , Inc.
+            </div>
 
         </>
     )
