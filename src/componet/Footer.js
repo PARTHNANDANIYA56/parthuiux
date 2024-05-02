@@ -94,7 +94,7 @@ function Footer() {
                     </div>
 
                     <div className='d-flex justify-content-center mt-5'>
-                        <button type="submit" className="btn_1">Submit</button>
+                        <button type="submit" className="btn_2">Submit</button>
                     </div>
                 </form>
             </div>

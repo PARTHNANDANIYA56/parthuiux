@@ -60,3 +60,18 @@ a {
     color: white;
     transition: 1s;
 }
+
+.btn_2 {
+    border: 1px solid #FD6F00;
+    color: #FD6F00;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #000;
+}
+
+.btn_2:hover {
+    background-color: #FD6F00;
+    transition: 1s;
+    color: white;
+}
