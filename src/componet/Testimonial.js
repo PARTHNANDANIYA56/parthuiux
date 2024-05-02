@@ -89,7 +89,11 @@ const App = () => {
     return (
         <div className="container mt-5">
             <div className="row justify-content-center">
-                <div className="col-md-12 mb-4 gap-5 d-flex justify-content-center">
+                <div className="text-center w-50 mt-4">
+                    <h2><b>My Projects</b></h2>
+                    <p>"My Projects" showcases a curated selection of design works, demonstrating expertise, creativity, and the ability to solve diverse challenges.</p>
+                </div>
+                <div className="col-md-12 mb-4 gap-5 d-flex justify-content-center mt-3">
                     <button className="btn btn-outline-warning" onClick={handleAppDesignClick}>Figma Design</button>
                     <button className="btn btn-outline-warning" onClick={handleWebDesignClick}>Web Design</button>
                 </div>
