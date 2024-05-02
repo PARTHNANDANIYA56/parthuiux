@@ -27,3 +27,36 @@ a {
 .project_test {
     margin-top: 10%;
 }
+
+.btn_1 {
+    border: 1px solid #FD6F00;
+    color: #FD6F00;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.btn_1:hover {
+    background-color: #FD6F00;
+    transition: 1s;
+    color: white;
+}
+
+.social-icon {
+    color: #FD6F00;
+}
+
+.social-icon:hover {
+    color: white;
+    transition: 1s;
+}
+
+.footer_mail {
+    color: #FD6F00;
+    text-decoration: none;
+}
+
+.footer_mail:hover {
+    color: white;
+    transition: 1s;
+}

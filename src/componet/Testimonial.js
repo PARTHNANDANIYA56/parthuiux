@@ -57,7 +57,7 @@ const cardData = [
         description: "Sleek, organized Keep Notes website design, prioritizing simplicity, accessibility, and efficient note-taking capabilities.",
         link: "https://keep-app-three.vercel.app/"
     }
-   
+
 ];
 
 const Card = ({ imgSrc, alt, title, description, link }) => (
@@ -67,7 +67,7 @@ const Card = ({ imgSrc, alt, title, description, link }) => (
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>
                 <p className="card-text">{description}</p>
-                <a href={link} download target="_blank" className="btn btn-outline-warning" role="button">
+                <a href={link} download target="_blank" className="btn_1" role="button">
                     Learn More
                 </a>
             </div>
@@ -94,8 +94,8 @@ const App = () => {
                     <p>"My Projects" showcases a curated selection of design works, demonstrating expertise, creativity, and the ability to solve diverse challenges.</p>
                 </div>
                 <div className="col-md-12 mb-4 gap-5 d-flex justify-content-center mt-3">
-                    <button className="btn btn-outline-warning" onClick={handleAppDesignClick}>Figma Design</button>
-                    <button className="btn btn-outline-warning" onClick={handleWebDesignClick}>Web Design</button>
+                    <a href="/" className="btn_1" onClick={handleAppDesignClick}>Figma Design</a>
+                    <a href="/" className="btn_1" onClick={handleWebDesignClick}>Web Design</a>
                 </div>
                 {cardData.map((card, index) => (
                     (showAppDesign && index < 4) || (!showAppDesign && index >= 4) ?

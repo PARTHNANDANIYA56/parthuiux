@@ -20,7 +20,7 @@ function Hero() {
                         <div className="d-flex mt-4 gap-3">
                             <a
                                 href="https://www.linkedin.com/in/parth-nandaniya-73b684224/" target="_blank"
-                                className="btn btn-outline-warning mr-2"
+                                className="btn_1 mr-2"
                                 role="button"
                             >
                                 HIRE ME
@@ -29,7 +29,7 @@ function Hero() {
                                 href="image/ParthNandaniya.pdf"
                                 download
                                 target="_blank"
-                                className="btn btn-outline-warning "
+                                className="btn_1"
                                 role="button"
                             >
                                 GET RESUME

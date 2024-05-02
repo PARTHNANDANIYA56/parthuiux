@@ -37,7 +37,7 @@ function Footer() {
 
 
                     <div className='d-flex justify-content-center mt-5'>
-                        <button type="submit" class="btn btn-outline-warning">Submit</button>
+                        <a href="/" type="button" className="btn_1">Submit</a>
                     </div>
                 </form>
             </div>
@@ -47,15 +47,15 @@ function Footer() {
             <footer class="footer mt-5 h3 ">
                 <div class="container d-flex gap-2 justify-content-center">
 
-                    <a href="https://api.whatsapp.com/send?phone=6355304734" target='_blenk' class="social-icon  text-warning"><IoLogoWhatsapp /></a>
-                    <a href="https://www.facebook.com/profile.php?id=100072656256788" target='_blenk' class="social-icon  text-warning"><FaFacebook /></a>
-                    <a href="https://t.me/+916355304734" class="social-icon  text-warning" target='_blenk'><FaTelegram /></a>
-                    <a href="https://www.linkedin.com/in/parth-nandaniya-73b684224/" class="social-icon  text-warning" target='_blenk'><FaLinkedin /></a>
+                    <a href="https://api.whatsapp.com/send?phone=6355304734" target='_blenk' class="social-icon"><IoLogoWhatsapp /></a>
+                    <a href="https://www.facebook.com/profile.php?id=100072656256788" target='_blenk' class="social-icon "><FaFacebook /></a>
+                    <a href="https://t.me/+916355304734" class="social-icon " target='_blenk'><FaTelegram /></a>
+                    <a href="https://www.linkedin.com/in/parth-nandaniya-73b684224/" class="social-icon" target='_blenk'><FaLinkedin /></a>
 
                 </div>
             </footer>
             <div className='text-center mt-3 mb-3 '>
-                <a href="#" className='text-warning'>parthnandaniya62@gmail.com</a>
+                <a href="#" className='footer_mail'>parthnandaniya62@gmail.com</a>
             </div>
             <div className="text-center bg-dark p-3">
                 © 2024 Parth All Rights Reserved , Inc.
