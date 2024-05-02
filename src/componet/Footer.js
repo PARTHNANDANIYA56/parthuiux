@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaFacebook } from 'react-icons/fa';
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -6,38 +6,95 @@ import { FaTelegram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 function Footer() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData();
+        formData.append('name', name);
+        formData.append('_replyto', email);
+        formData.append('message', message);
+
+        try {
+            const response = await fetch('https://formspree.io/f/xleqzlyq', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                alert('Message sent successfully!');
+                setName('');
+                setEmail('');
+                setMessage('');
+            } else {
+                alert('Failed to send message. Please try again later.');
+            }
+        } catch (error) {
+            console.error('Error sending message:', error);
+            alert('An unexpected error occurred. Please try again later.');
+        }
+    };
     return (
         <>
             <div class="container">
                 <div className='mt-4 text-center'>
                     <h1>Contact Us</h1>
                 </div>
-                <form >
-                    <div class="d-flex gap-5 justify-content-center">
-                        <div class=" text-center w-25">
-                            <label htmlFor="Name">Name</label>
-                            <input type="text" class="form-control mt-3" placeholder="Enter Your Name" required />
+                <form onSubmit={handleSubmit}>
+                    <div className="d-flex gap-5 justify-content-center">
+                        <div className="text-center w-25">
+                            <label htmlFor="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                                className="form-control mt-3"
+                                placeholder="Enter Your Name"
+                                required
+                            />
                         </div>
-                        <div class="text-center w-25">
+                        <div className="text-center w-25">
                             <label htmlFor="email">Email</label>
-                            <input type="email" class="form-control mt-3" placeholder="Enter Your Email" required />
+                            <input
+                                type="email"
+                                id="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                className="form-control mt-3"
+                                placeholder="Enter Your Email"
+                                required
+                            />
                         </div>
                     </div>
 
-                    <div class="container text-center">
-                        <div class="row justify-content-center">
-                            <div class="col-6">
-                                <div class="form-group mt-3">
-                                    <label for="message">Message</label>
-                                    <textarea class="form-control mt-3" id="message" rows="5" column="1000" placeholder="Enter your message" required></textarea>
+                    <div className="container text-center">
+                        <div className="row justify-content-center">
+                            <div className="col-6">
+                                <div className="form-group mt-3">
+                                    <label htmlFor="message">Message</label>
+                                    <textarea
+                                        id="message"
+                                        value={message}
+                                        onChange={(e) => setMessage(e.target.value)}
+                                        className="form-control mt-3"
+                                        rows="5"
+                                        placeholder="Enter your message"
+                                        required
+                                    />
                                 </div>
                             </div>
                         </div>
                     </div>
 
-
                     <div className='d-flex justify-content-center mt-5'>
-                        <a href="/" type="button" className="btn_1">Submit</a>
+                        <button type="submit" className="btn_1">Submit</button>
                     </div>
                 </form>
             </div>

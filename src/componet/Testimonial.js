@@ -94,8 +94,8 @@ const App = () => {
                     <p>"My Projects" showcases a curated selection of design works, demonstrating expertise, creativity, and the ability to solve diverse challenges.</p>
                 </div>
                 <div className="col-md-12 mb-4 gap-5 d-flex justify-content-center mt-3">
-                    <a href="/" className="btn_1" onClick={handleAppDesignClick}>Figma Design</a>
-                    <a href="/" className="btn_1" onClick={handleWebDesignClick}>Web Design</a>
+                    <a type="button" className="btn_1" onClick={handleAppDesignClick}>Figma Design</a>
+                    <a type="button" className="btn_1" onClick={handleWebDesignClick}>Web Design</a>
                 </div>
                 {cardData.map((card, index) => (
                     (showAppDesign && index < 4) || (!showAppDesign && index >= 4) ?
