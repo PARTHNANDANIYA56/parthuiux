@@ -41,21 +41,21 @@ const cardData = [
         alt: "insurance-agency",
         title: "Insurance-Agency",
         description: "Sleek, professional insurance agency website design, blending trust, clarity, and accessibility for clients' peace of mind.",
-        link: "https://furniture-seven-ashen.vercel.app/"
+        link: "https://insurance-agency-34wu6rtu3-parths-projects-89c39c81.vercel.app/"
     },
     {
         imgSrc: "image/app dashboard.png",
         alt: "App Dashboard",
         title: "App Dashboard",
         description: "Modern, intuitive app dashboard design, optimizing usability, aesthetics, and functionality for seamless user experience.",
-        link: "https://furniture-seven-ashen.vercel.app/"
+        link: "https://ding-estate.vercel.app/"
     },
     {
         imgSrc: "image/keepnotes.png",
         alt: "Keep Notes",
         title: "Keep Notes",
         description: "Sleek, organized Keep Notes website design, prioritizing simplicity, accessibility, and efficient note-taking capabilities.",
-        link: "https://furniture-seven-ashen.vercel.app/"
+        link: "https://keep-app-three.vercel.app/"
     }
    
 ];
