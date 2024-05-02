@@ -19,17 +19,17 @@ function Hero() {
                         </p>
                         <div className="d-flex mt-4 gap-3">
                             <a
-                                href="https://www.linkedin.com/in/parth-nandaniya-73b684224/"                                target="_blank"
-                                className="btn btn-warning mr-2"
+                                href="https://www.linkedin.com/in/parth-nandaniya-73b684224/" target="_blank"
+                                className="btn btn-outline-warning mr-2"
                                 role="button"
                             >
                                 HIRE ME
                             </a>
                             <a
-                                href="image/ParthNandaniya.jpg"
+                                href="image/ParthNandaniya.pdf"
                                 download
                                 target="_blank"
-                                className="btn btn-warning "
+                                className="btn btn-outline-warning "
                                 role="button"
                             >
                                 GET RESUME

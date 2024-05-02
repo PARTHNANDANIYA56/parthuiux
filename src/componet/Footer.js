@@ -22,8 +22,7 @@ function Footer() {
                             <label htmlFor="email">Email</label>
                             <input type="email" class="form-control mt-3" placeholder="Enter Your Email" required />
                         </div>
-                    </div>.
-
+                    </div>
 
                     <div class="container text-center">
                         <div class="row justify-content-center">
@@ -38,7 +37,7 @@ function Footer() {
 
 
                     <div className='d-flex justify-content-center mt-5'>
-                        <button type="submit" class="btn btn-warning">Submit</button>
+                        <button type="submit" class="btn btn-outline-warning">Submit</button>
                     </div>
                 </form>
             </div>
