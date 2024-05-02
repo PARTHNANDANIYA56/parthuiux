@@ -45,7 +45,7 @@ function Footer() {
 
             {/* Footer componet */}
             <footer class="footer mt-5 h3 ">
-                <div class="container d-flex gap-2 justify-content-center">
+                <div class="container d-flex gap-3 justify-content-center">
 
                     <a href="https://api.whatsapp.com/send?phone=6355304734" target='_blenk' class="social-icon"><IoLogoWhatsapp /></a>
                     <a href="https://www.facebook.com/profile.php?id=100072656256788" target='_blenk' class="social-icon "><FaFacebook /></a>
