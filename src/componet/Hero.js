@@ -10,7 +10,7 @@ function Hero() {
                         <h1>
                             Hello, I'm Parth Nandaniya
                             <br />
-                            UI & UX Design
+                            UI & UX Designer
                         </h1>
                         <p>
                             i'm a Parth Nandaniya based UI/UX Designer. Designer Creating
