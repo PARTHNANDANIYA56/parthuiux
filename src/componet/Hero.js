@@ -10,7 +10,7 @@ function Hero() {
                         <h1>
                             Hello, I'm Parth Nandaniya
                             <br />
-                            UI & UX Designer
+                            UI & UX Design
                         </h1>
                         <p>
                             i'm a Parth Nandaniya based UI/UX Designer. Designer Creating
@@ -45,7 +45,7 @@ function Hero() {
                                 className="object-cover object-center rounded"
                                 alt="hero"
                                 src="image/parth.jpg"
-                                width={750}
+                                width={550}
                             />
                         </div>
 
