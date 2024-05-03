@@ -1,6 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
 
 const cardData = [
+    {
+        imgSrc: "image/graphicscard-1.jpg",
+        alt: "Business Card Design",
+        title: "Business Card Design",
+        description: "Sleek, professional business card design, blending creativity and essential information for impactful networking.",
+        link: "https://api.whatsapp.com/send?phone=6355304734"
+    },
+    {
+        imgSrc: "image/graphicscard-2.jpg",
+        alt: "Bussiness",
+        title: "Bussiness",
+        description: "Crafting sophisticated business card designs, fusing professionalism with creativity to make lasting impressions in networking and branding.",
+        link: "https://api.whatsapp.com/send?phone=6355304734"
+    },
+    {
+        imgSrc: "image/graphicscard-2.jpg",
+        alt: "Bussiness",
+        title: "Bussiness",
+        description: "Crafting sophisticated business card designs, fusing professionalism with creativity to make lasting impressions in networking and branding.",
+        link: "https://api.whatsapp.com/send?phone=6355304734"
+    },
+    {
+        imgSrc: "image/graphicscard-3.png",
+        alt: "Social Meida Post",
+        title: "Social Meida Post",
+        description: "Sleek, professional business card design, blending creativity and essential information for impactful networking.",
+        link: "https://api.whatsapp.com/send?phone=6355304734"
+    },
     {
         imgSrc: "image/passcodelockscreen.png",
         alt: "Pass Code Lock Screen",
@@ -58,6 +87,7 @@ const cardData = [
         link: "https://keep-app-three.vercel.app/"
     }
 
+
 ];
 
 const Card = ({ imgSrc, alt, title, description, link }) => (
@@ -75,15 +105,65 @@ const Card = ({ imgSrc, alt, title, description, link }) => (
     </div>
 );
 
+
 const App = () => {
-    const [showAppDesign, setShowAppDesign] = useState(true);
+    const [showGraphicsDesign, setShowGraphicsDesign] = useState(false);
+    const [showAppDesign, setShowAppDesign] = useState(false);
+    const [showWebDesign, setShowWebDesign] = useState(false);
+    const [activeButton, setActiveButton] = useState(localStorage.getItem('activeButton') || null);
+
+    useEffect(() => {
+        if (!activeButton) {
+            handleAllDesignClick();
+        } else {
+            // Update the card display based on the active button
+            switch (activeButton) {
+                case 'graphics':
+                    handleGraphicsDesignClick();
+                    break;
+                case 'app':
+                    handleAppDesignClick();
+                    break;
+                case 'web':
+                    handleWebDesignClick();
+                    break;
+                default:
+                    handleAllDesignClick();
+                    break;
+            }
+        }
+    }, []); // Run only once on component mount
+
+    useEffect(() => {
+        localStorage.setItem('activeButton', activeButton);
+    }, [activeButton]); // Update localStorage when activeButton changes
+
+    const handleAllDesignClick = () => {
+        setActiveButton('all');
+        setShowGraphicsDesign(true);
+        setShowAppDesign(true);
+        setShowWebDesign(true);
+    };
+
+    const handleGraphicsDesignClick = () => {
+        setActiveButton('graphics');
+        setShowGraphicsDesign(true);
+        setShowAppDesign(false);
+        setShowWebDesign(false);
+    };
 
     const handleAppDesignClick = () => {
+        setActiveButton('app');
         setShowAppDesign(true);
+        setShowGraphicsDesign(false);
+        setShowWebDesign(false);
     };
 
     const handleWebDesignClick = () => {
+        setActiveButton('web');
+        setShowWebDesign(true);
         setShowAppDesign(false);
+        setShowGraphicsDesign(false);
     };
 
     return (
@@ -94,14 +174,21 @@ const App = () => {
                     <p>"My Projects" showcases a curated selection of design works, demonstrating expertise, creativity, and the ability to solve diverse challenges.</p>
                 </div>
                 <div className="col-md-12 mb-4 gap-5 d-flex justify-content-center mt-3">
-                    <a type="button" className="btn_1" onClick={handleAppDesignClick}>Figma Design</a>
-                    <a type="button" className="btn_1" onClick={handleWebDesignClick}>Web Design</a>
+                    <a type="button" className={`btn_1 ${activeButton === "all" ? "active" : ""}`} onClick={handleAllDesignClick}>All Design</a>
+                    <a type="button" className={`btn_1 ${activeButton === "graphics" ? "active" : ""}`} onClick={handleGraphicsDesignClick}>Graphics Design</a>
+                    <a type="button" className={`btn_1 ${activeButton === "app" ? "active" : ""}`} onClick={handleAppDesignClick}>Figma Design</a>
+                    <a type="button" className={`btn_1 ${activeButton === "web" ? "active" : ""}`} onClick={handleWebDesignClick}>Web Design</a>
                 </div>
-                {cardData.map((card, index) => (
-                    (showAppDesign && index < 4) || (!showAppDesign && index >= 4) ?
-                        <Card key={index} {...card} /> :
-                        null
-                ))}
+                {cardData.map((card, index) => {
+                    if (showGraphicsDesign && index < 4) {
+                        return <Card key={index} {...card} />;
+                    } else if (showAppDesign && index >= 4 && index < 8) {
+                        return <Card key={index} {...card} />;
+                    } else if (showWebDesign && index >= 8) {
+                        return <Card key={index} {...card} />;
+                    }
+                    return null;
+                })}
             </div>
         </div>
     );

@@ -75,3 +75,7 @@ a {
     transition: 1s;
     color: white;
 }
+.active {
+    background-color: #FD6F00;
+    color: #fff;
+}
