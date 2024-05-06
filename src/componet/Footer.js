@@ -55,7 +55,7 @@ function Footer() {
                                 id="name"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
-                                className="form-control mt-3"
+                                className="change mt-3"
                                 placeholder="Enter Your Name"
                                 required
                             />
@@ -67,7 +67,7 @@ function Footer() {
                                 id="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                className="form-control mt-3"
+                                className="change mt-3"
                                 placeholder="Enter Your Email"
                                 required
                             />
@@ -83,7 +83,7 @@ function Footer() {
                                         id="message"
                                         value={message}
                                         onChange={(e) => setMessage(e.target.value)}
-                                        className="form-control mt-3"
+                                        className="change mt-3"
                                         rows="5"
                                         placeholder="Enter your message"
                                         required
@@ -117,7 +117,9 @@ function Footer() {
             <div className="text-center bg-dark p-3">
                 © 2024 Parth All Rights Reserved , Inc.
             </div>
-
+            <div>
+                <input type="text" className='change' placeholder='Enter name' />
+            </div>
         </>
     )
 }
