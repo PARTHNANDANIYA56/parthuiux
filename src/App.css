@@ -519,7 +519,7 @@ textarea {
     .form_nameemail {
         display: flex;
         flex-direction: column;
-        width:fit-content;
+        width: fit-content;
         margin: auto;
 
     }
@@ -579,7 +579,7 @@ textarea {
     .form_textarea {
         display: flex;
         flex-direction: column;
-        width: fit-content; 
+        width: fit-content;
         align-items: start;
         padding-top: 30px;
     }
