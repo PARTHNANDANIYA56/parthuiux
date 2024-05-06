@@ -512,7 +512,58 @@ textarea {
 
 @media screen and (max-width: 425px) {
 
-   .banner_img{
-    width: 300px;
-   }
+    .banner_img {
+        width: 300px;
+    }
+
+    .dark {
+        align-content: center;
+        justify-content: center;
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .banner_img {
+        width: 300px;
+    }
+
+    .form_nameemail {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: auto;
+
+    }
+
+    .form_textarea {
+        display: flex;
+        flex-direction: column;
+        width: 125%;
+        align-items: start;
+        padding-top: 30px;
+    }
+}
+@media screen and (max-width: 320px) {
+
+    .banner_img {
+        width: 300px;
+    }
+
+    .form_nameemail {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: auto;
+
+    }
+
+    .form_textarea {
+        display: flex;
+        flex-direction: column;
+        width: 125%;
+        align-items: start;
+        padding-top: 30px;
+    }
 }
