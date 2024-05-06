@@ -117,9 +117,7 @@ function Footer() {
             <div className="text-center bg-dark p-3">
                 © 2024 Parth All Rights Reserved , Inc.
             </div>
-            <div>
-                <input type="text" className='change' placeholder='Enter name' />
-            </div>
+            
         </>
     )
 }
