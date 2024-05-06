@@ -379,6 +379,7 @@ input[type="text"] {
     border-radius: 10px;
     color: white;
 }
+
 input[type="email"] {
     display: block;
     width: 300px;
@@ -388,12 +389,123 @@ input[type="email"] {
     border-radius: 10px;
     color: white;
 }
+
 textarea {
-    display: block;
+    display: grid;
     width: 100%;
     padding: 10px;
-    /* margin-bottom: 5px; */
     background-color: #31363F;
     border-radius: 10px;
     color: white;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .hero_mein {
+        display: contents;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 50px;
+
+    }
+
+    .text-white {
+        max-width: 100%;
+        gap: 15px;
+        display: grid;
+    }
+
+    .hero_btn {
+        justify-content: center;
+        display: flex;
+        padding-bottom: 25px;
+    }
+
+    .project_contact {
+        min-width: 100%;
+    }
+
+    .myproject_mein {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .postcard {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .postcard__img {
+        width: 100%;
+    }
+
+    .postcard__text {
+        padding: 10px;
+    }
+
+    .form_nameemail {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: auto;
+
+    }
+
+    .form_textarea {
+        display: flex;
+        flex-direction: column;
+        width: 125%;
+        align-items: start;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .pn_logo {
+        width: 40%;
+    }
+
+    .hero_mein {
+        gap: 50px;
+        display: grid;
+    }
+
+    .text-white h1 {
+        font-size: 24px;
+    }
+
+    .text-white p {
+        font-size: 14px;
+    }
+
+    .text-white {
+        width: 100%;
+        gap: 15px;
+        display: grid;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .postcard__text {
+        padding: 5px;
+    }
+
+    .w-50 {
+        width: 100%;
+    }
+
+    .form_textarea {
+        display: flex;
+        flex-direction: column;
+        width: 118%;
+        align-items: start;
+        padding-top: 30px;
+    }
 }

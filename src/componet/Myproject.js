@@ -85,9 +85,11 @@ function MyProject() {
     return (
         <>
             <section className="dark">
-                <div className="container py-4">
-                    <h1 className="h1 text-center" id="pageHeaderTitle">My Projects</h1>
-                    <p className="w-50 text-center m-auto pb-4">"My Projects" showcases a curated selection of design works, demonstrating expertise, creativity, and the ability to solve diverse challenges.</p>
+                <div className="container py-4 myproject_mein">
+                    <div className=''>
+                        <h1 className="h1 text-center" id="pageHeaderTitle">My Projects</h1>
+                        <p className="w-50 text-center m-auto pb-4 project_contact">"My Projects" showcases a curated selection of design works, demonstrating expertise, creativity, and the ability to solve diverse challenges.</p>
+                    </div>
 
                     {/* Mapping over projects array to generate project components */}
                     {projects.map(project => (

@@ -47,8 +47,8 @@ function Footer() {
                     <h1>Contact Us</h1>
                 </div>
                 <form onSubmit={handleSubmit}>
-                    <div className="d-flex gap-5 justify-content-center">
-                        <div className="text-center w-25">
+                    <div className="d-flex gap-5 justify-content-center form_nameemail">
+                        <div className="text-center w-25 ">
                             <label htmlFor="name">Name</label>
                             <input
                                 type="text"
@@ -74,10 +74,10 @@ function Footer() {
                         </div>
                     </div>
 
-                    <div className="container text-center">
+                    <div className="container text-center ">
                         <div className="row justify-content-center">
                             <div className="col-6">
-                                <div className="form-group mt-3">
+                                <div className="form-group mt-3 form_textarea">
                                     <label htmlFor="message">Message</label>
                                     <textarea
                                         id="message"
@@ -117,7 +117,7 @@ function Footer() {
             <div className="text-center bg-dark p-3">
                 © 2024 Parth All Rights Reserved , Inc.
             </div>
-            
+
         </>
     )
 }

@@ -5,8 +5,8 @@ function Hero() {
     return (
         <>
             <div className='container'>
-                <div className='align-items-center d-flex'>
-                    <div className='text-white '>
+                <div className='align-items-center d-flex hero_mein'>
+                    <div className='text-white about_mein'>
                         <h1>
                             Hello, I'm Parth Nandaniya
                             <br />
@@ -17,7 +17,7 @@ function Hero() {
                             Awesome And Effective Visul Identities For Companies Of All Size
                             Around The Globe
                         </p>
-                        <div className="d-flex mt-4 gap-3">
+                        <div className="d-flex mt-4 gap-3 hero_btn">
                             <a
                                 href="https://www.linkedin.com/in/parth-nandaniya-73b684224/" target="_blank"
                                 className="btn_1 mr-2"
