@@ -42,7 +42,7 @@ function Hero() {
 
                         <div>
                             <img
-                                className="object-cover object-center rounded"
+                                className="object-cover object-center rounded banner_img"
                                 alt="hero"
                                 src="image/parth.jpg"
                                 width={550}

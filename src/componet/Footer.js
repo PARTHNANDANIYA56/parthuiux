@@ -102,7 +102,7 @@ function Footer() {
 
             {/* Footer componet */}
             <footer class="footer mt-5 h3 ">
-                <div class="container d-flex gap-3 justify-content-center">
+                <div class="container d-flex gap-3 justify-content-center footer_icon">
 
                     <a href="https://api.whatsapp.com/send?phone=6355304734" target='_blenk' class="social-icon"><IoLogoWhatsapp /></a>
                     <a href="https://www.facebook.com/profile.php?id=100072656256788" target='_blenk' class="social-icon "><FaFacebook /></a>
@@ -114,7 +114,7 @@ function Footer() {
             <div className='text-center mt-3 mb-3 '>
                 <a href="#" className='footer_mail'>parthnandaniya62@gmail.com</a>
             </div>
-            <div className="text-center bg-dark p-3">
+            <div className="text-center bg-dark p-3 footer_buttom">
                 © 2024 Parth All Rights Reserved , Inc.
             </div>
 
