@@ -516,6 +516,22 @@ textarea {
         width: 300px;
     }
 
+    .form_nameemail {
+        display: flex;
+        flex-direction: column;
+        width:fit-content;
+        margin: auto;
+
+    }
+
+    .form_textarea {
+        display: flex;
+        flex-direction: column;
+        width: 150%;
+        padding-top: 30px;
+        margin-left: -3pc;
+    }
+
     .dark {
         align-content: center;
         justify-content: center;
@@ -545,6 +561,7 @@ textarea {
         padding-top: 30px;
     }
 }
+
 @media screen and (max-width: 320px) {
 
     .banner_img {
@@ -562,7 +579,7 @@ textarea {
     .form_textarea {
         display: flex;
         flex-direction: column;
-        width: 125%;
+        width: fit-content; 
         align-items: start;
         padding-top: 30px;
     }
