@@ -112,7 +112,7 @@ function Footer() {
                 </div>
             </footer>
             <div className='text-center mt-3 mb-3 '>
-                <a href="#" className='footer_mail'>parthnandaniya62@gmail.com</a>
+                <a href="https://mail.google.com" className='footer_mail' target='_blank'>parthnandaniya62@gmail.com</a>
             </div>
             <div className="text-center bg-dark p-3 footer_buttom">
                 © 2024 Parth All Rights Reserved , Inc.

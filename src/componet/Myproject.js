@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 
 function MyProject() {
-    // Sample project data
     const [showMore, setShowMore] = useState(false);
-
     const projects = [
         {
             id: 1,
@@ -75,13 +73,10 @@ function MyProject() {
             description: "Introducing SlowMotionVideoMaker, an innovative app designed to effortlessly create captivating slow-motion videos. With its user-friendly interface and powerful features, transform ordinary moments into extraordinary cinematic experiences. Customize video speeds, add effects, and unleash your creativity to produce stunning visuals that leave a lasting impression.",
             link: 'https://www.figma.com/file/8mWGbBPwJvaq60neFkWK6o/Slow-Motion-Video-Maker?type=design&node-id=0-1&mode=design&t=u6glcUjx4D3A52xp-0',
         },
-
     ];
-
     const handleSeeMoreClick = () => {
         setShowMore(true);
     };
-
     return (
         <>
             <section className="dark">
@@ -112,5 +107,4 @@ function MyProject() {
         </>
     );
 }
-
 export default MyProject;
