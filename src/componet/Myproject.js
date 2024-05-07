@@ -75,7 +75,7 @@ function MyProject() {
             description: "Introducing SlowMotionVideoMaker, an innovative app designed to effortlessly create captivating slow-motion videos. With its user-friendly interface and powerful features, transform ordinary moments into extraordinary cinematic experiences. Customize video speeds, add effects, and unleash your creativity to produce stunning visuals that leave a lasting impression.",
             link: 'https://www.figma.com/file/8mWGbBPwJvaq60neFkWK6o/Slow-Motion-Video-Maker?type=design&node-id=0-1&mode=design&t=u6glcUjx4D3A52xp-0',
         },
-       
+
     ];
 
     const handleSeeMoreClick = () => {
@@ -90,8 +90,6 @@ function MyProject() {
                         <h1 className="h1 text-center" id="pageHeaderTitle">My Projects</h1>
                         <p className="w-50 text-center m-auto pb-4 project_contact">"My Projects" showcases a curated selection of design works, demonstrating expertise, creativity, and the ability to solve diverse challenges.</p>
                     </div>
-
-                    {/* Mapping over projects array to generate project components */}
                     {projects.map(project => (
                         <article key={project.id} className="postcard dark blue">
                             <a className="postcard__img_link" href="#">
@@ -102,13 +100,8 @@ function MyProject() {
                                 <div className="postcard__bar"></div>
                                 <div className="postcard__preview-txt">{project.description}</div>
                                 <ul className="postcard__tagbox">
-                                    {/* Conditional rendering based on showMore state */}
                                     <li className="tag__item play blue">
-                                        {/* {showMore ? (
-                                            <a href={project.link}>My Work</a>
-                                        ) : ( */}
                                         <a href={project.link} onClick={handleSeeMoreClick} target='_blank'><i className="fas fa-play mr-2"></i>See More</a>
-                                        {/* )} */}
                                     </li>
                                 </ul>
                             </div>
