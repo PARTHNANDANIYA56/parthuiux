@@ -88,6 +88,22 @@ a {
     border: gray;
 }
 
+/* loading animation */
+.loading-animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Make it full height */
+}
+
+.loading-animation {
+    max-width: 100%;
+    /* Ensure it doesn't overflow */
+    max-height: 100%;
+    /* Ensure it doesn't overflow */
+}
+
 /* gpt code */
 
 /* gpt code */
