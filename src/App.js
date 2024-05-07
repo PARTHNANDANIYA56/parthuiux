@@ -8,6 +8,7 @@ import Myproject from './componet/Myproject';
 
 function App() {
   const [animationData, setAnimationData] = useState(null);
+  const [isloading, setisloading] = useState(true);
   const [animationIsPlaying, setAnimationIsPlaying] = useState(true);
 
   useEffect(() => {
@@ -24,6 +25,11 @@ function App() {
     fetchAnimationData();
   }, []);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setisloading(false)
+    }, 1000);
+  }, [])
   // Customize Lottie options
   const defaultOptions = {
     loop: false,
@@ -41,7 +47,7 @@ function App() {
 
   return (
     <div className="app-container">
-      {animationData && animationIsPlaying ? (
+      {isloading ? (
         <div className="loading-animation-container">
           <Lottie
             options={defaultOptions}
