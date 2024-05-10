@@ -103,22 +103,46 @@ function Footer() {
                 <div class="mt-4 text-center">
                     <h1>Contact Us</h1>
                 </div>
-                <form><div class="d-flex gap-5 justify-content-center form_nameemail">
+                <form onSubmit={handleSubmit}><div class="d-flex gap-5 justify-content-center form_nameemail">
                     <div class="text-center w-25 ">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" class="change mt-3" placeholder="Enter Your Name" required="" value="" />
+                        <label htmlFor="name">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            classNameName="change mt-3"
+                            placeholder="Enter Your Name"
+                            required
+                        />
                     </div>
                     <div class="text-center w-25">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="change mt-3" placeholder="Enter Your Email" required="" value="" />
+                        <label htmlFor="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            classNameName="change mt-3"
+                            placeholder="Enter Your Email"
+                            required
+                        />
                     </div>
                 </div>
                     <div class="container text-center ">
                         <div class="row justify-content-center">
                             <div class="col-6">
                                 <div class="form-group mt-3 form_textarea">
-                                    <label for="message">Message</label>
-                                    <textarea id="message" class="change mt-3" rows="5" placeholder="Enter your message" required=""></textarea>
+                                    <label htmlFor="message">Message</label>
+                                    <textarea
+                                        id="message"
+                                        value={message}
+                                        onChange={(e) => setMessage(e.target.value)}
+                                        classNameName="change mt-3"
+                                        rows="5"
+                                        placeholder="Enter your message"
+                                        required
+                                    />
                                 </div>
                             </div>
                         </div>
