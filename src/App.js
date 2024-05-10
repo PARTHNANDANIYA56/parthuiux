@@ -99,7 +99,7 @@ function App() {
           width: 0,
           height: "6px",
           borderRadius:"0 0 10px 10px",
-          backgroundImage: "linear-gradient(to right, rgb(122, 153, 217), rgb(28, 58, 148))",
+          backgroundColor: "#fff",
           zIndex: 9999,
           transition: "width 0.3s ease",
         }}
