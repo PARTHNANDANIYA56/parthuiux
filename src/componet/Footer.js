@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaFacebook } from 'react-icons/fa';
+import { FaBehanceSquare, FaFacebook } from 'react-icons/fa';
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaTelegram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -161,6 +161,7 @@ function Footer() {
                     <a href="https://www.facebook.com/profile.php?id=100072656256788" target='_blenk' className="social-icon "><FaFacebook /></a>
                     <a href="https://t.me/+916355304734" className="social-icon " target='_blenk'><FaTelegram /></a>
                     <a href="https://www.linkedin.com/in/parth-nandaniya-73b684224/" className="social-icon" target='_blenk'><FaLinkedin /></a>
+                    <a href="https://www.behance.net/gjgamer" className="social-icon" target='_blenk'><FaBehanceSquare /></a>
 
                 </div>
             </footer>
